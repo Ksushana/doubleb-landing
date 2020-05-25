@@ -434,7 +434,7 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0.90909rem 0;
+    padding: 1.81818rem 0;
     -webkit-box-align: initial;
         -ms-flex-align: initial;
             align-items: initial;
@@ -484,13 +484,13 @@ a:hover {
 }
 
 .main-page__logo img {
-  width: 9.09091rem;
+  width: 7.27273rem;
   height: 2.90909rem;
 }
 
 @media (max-width: 979px) {
   .main-page__logo img {
-    width: 8.31818rem;
+    width: 6.68182rem;
     height: 2.63636rem;
   }
 }
@@ -532,7 +532,6 @@ a:hover {
 }
 
 .main-page__text p {
-  letter-spacing: -0.01045rem;
   margin-top: 0.68182rem;
   margin-bottom: 0.68182rem;
 }

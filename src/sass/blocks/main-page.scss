@@ -8,7 +8,7 @@
 
   @include mobile {
     flex-direction: column;
-    padding: size(20px) 0;
+    padding: size(40px) 0;
     align-items: initial;
   }
 }
@@ -48,11 +48,11 @@
     }
   }
   img {
-    width: size(200px);
+    width: size(160px);
     height: size(64px);
 
     @include mobile {
-      width: size(183px);
+      width: size(147px);
       height: size(58px);
     }
   }
@@ -90,7 +90,7 @@
   }
 
   p {
-    letter-spacing: size(-0.23px);
+    // letter-spacing: size(-0.23px);
     margin-top: size(15px);
     margin-bottom: size(15px);
 
