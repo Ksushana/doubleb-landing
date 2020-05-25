@@ -1,0 +1,202 @@
+.main-page {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0 size(55px) 0 size(135px);
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+    padding: size(20px) 0;
+    align-items: initial;
+  }
+}
+
+.main-page__text-block {
+  margin-bottom: size(114px);
+  @include mobile {
+    padding: 0 size(31px);
+    margin-bottom: size(30px);
+  }
+
+}
+
+.main-page__logo {
+  margin-bottom: size(48px);
+  position: relative;
+
+  @include mobile {
+    margin-bottom: size(23px);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: size(185px);
+    height: size(185px);
+    background: rgba(51, 149, 132, 0.2);
+    border-radius: 50%;
+    left: size(-95px);
+    top: size(-60px);
+
+    @include mobile {
+      width: size(111px);
+      height: size(111px);
+      left: size(-55px);
+      top: size(-23px);
+    }
+  }
+  img {
+    width: size(200px);
+    height: size(64px);
+
+    @include mobile {
+      width: size(183px);
+      height: size(58px);
+    }
+  }
+}
+
+.main-page__text {
+  padding-right: size(108px);
+  position: relative;
+
+  @include mobile {
+    padding-right: 0;
+    font-size: size(20px);
+    line-height: 151%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: size(35px);
+    height: size(35px);
+    background:  #E4B584;
+    border-radius: 50%;
+    right: size(-10px);
+    top: 32%;
+    z-index: -1;
+
+    @include mobile {
+      width: size(22px);
+      height: size(22px);
+      top: auto;
+      bottom:  size(-247px);
+      right: auto;
+      left: size(-18px);
+    }
+  }
+
+  p {
+    letter-spacing: size(-0.23px);
+    margin-top: size(15px);
+    margin-bottom: size(15px);
+
+    @include mobile {
+      margin-top: size(14px);
+      margin-bottom: size(14px);
+    }
+  }
+}
+
+.main-page__list {
+  @include list-reset;
+  display: flex;
+  margin-top: size(81px);
+
+  @include mobile {
+    margin-top: size(31px);
+  }
+
+  li {
+    font-size: 0;
+
+
+
+    &:first-child a {
+      display: block;
+      background-image: url("../img/applestore.svg");
+      width: size(167px);
+      height: size(54px);
+      margin-right: size(24px);
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+      @include mobile {
+        margin-right: size(16px);
+        width: size(160px);
+        height: size(52px);
+      }
+    }
+
+    &:last-child a {
+      display: block;
+      background-image: url("../img/googleplay.svg");
+      width: size(180px);
+      height: size(54px);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @include mobile {
+        width: size(173px);
+        height: size(52px);
+      }
+    }
+  }
+}
+
+.main-page__img {
+  position: relative;
+  max-height: 90%;
+  &::before {
+    position: absolute;
+    content: "";
+    width: size(252px);
+    height: size(252px);
+    background: #E4B584;
+    border-radius: 50%;
+    right: size(29px);
+    top: size(-55px);
+    z-index: -1;
+
+    @include mobile {
+      width: size(173px);
+      height: size(173px);
+      right: size(-9px);
+      top: size(-15px);
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: size(362px);
+    height: size(362px);
+    background:  #3E5652;
+    border-radius: 50%;
+    left: size(-5px);
+    bottom: size(-89px);
+    z-index: -1;
+
+    @include mobile {
+      width: size(242px);
+      height: size(242px);
+      left: size(-10px);
+      bottom: size(60px);
+    }
+  }
+  img {
+    width: size(695px);
+    height: size(755px);
+    max-height: 90%;
+    object-fit: contain;
+    z-index: 10;
+
+    @include mobile {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
