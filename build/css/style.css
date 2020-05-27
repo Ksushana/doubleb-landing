@@ -478,8 +478,8 @@ a:hover {
   .main-page__logo::before {
     width: 5.04545rem;
     height: 5.04545rem;
-    left: -2.5rem;
-    top: -1.04545rem;
+    left: 10.5rem;
+    top: 1.95455rem;
   }
 }
 
@@ -498,11 +498,13 @@ a:hover {
 .main-page__text {
   padding-right: 4.90909rem;
   position: relative;
+  letter-spacing: -1px;
+  color: #363636;
 }
 
 @media (max-width: 979px) {
   .main-page__text {
-    padding-right: 0;
+    padding-right: 28px;
     font-size: 0.90909rem;
     line-height: 151%;
   }
