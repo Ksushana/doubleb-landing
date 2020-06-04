@@ -515,7 +515,7 @@ a:hover {
   content: "";
   width: 1.59091rem;
   height: 1.59091rem;
-  background: #E4B584;
+  background: #e4b584;
   border-radius: 50%;
   right: -0.45455rem;
   top: 32%;
@@ -609,7 +609,7 @@ a:hover {
   content: "";
   width: 11.45455rem;
   height: 11.45455rem;
-  background: #E4B584;
+  background: #e4b584;
   border-radius: 50%;
   right: 1.31818rem;
   top: -2.5rem;
@@ -630,7 +630,7 @@ a:hover {
   content: "";
   width: 16.45455rem;
   height: 16.45455rem;
-  background: #3E5652;
+  background: #3e5652;
   border-radius: 50%;
   left: -0.22727rem;
   bottom: -4.04545rem;
@@ -659,6 +659,23 @@ a:hover {
   .main-page__img img {
     width: 100%;
     height: auto;
+  }
+}
+
+.main-page__img .sysoev {
+  position: absolute;
+  bottom: -2.45455rem;
+  left: calc(50% - 7rem);
+  width: 15.13636rem;
+  height: 12.54545rem;
+}
+
+@media (max-width: 979px) {
+  .main-page__img .sysoev {
+    bottom: -2.15455rem;
+    left: calc(50% - 3.8rem);
+    width: 9.5rem;
+    height: 9rem;
   }
 }
 

@@ -19,7 +19,6 @@
     padding: 0 size(31px);
     margin-bottom: size(30px);
   }
-
 }
 
 .main-page__logo {
@@ -75,7 +74,7 @@
     content: "";
     width: size(35px);
     height: size(35px);
-    background:  #E4B584;
+    background: #e4b584;
     border-radius: 50%;
     right: size(-10px);
     top: 32%;
@@ -85,7 +84,7 @@
       width: size(22px);
       height: size(22px);
       top: auto;
-      bottom:  size(-247px);
+      bottom: size(-247px);
       right: auto;
       left: size(-18px);
     }
@@ -114,8 +113,6 @@
 
   li {
     font-size: 0;
-
-
 
     &:first-child a {
       display: block;
@@ -157,7 +154,7 @@
     content: "";
     width: size(252px);
     height: size(252px);
-    background: #E4B584;
+    background: #e4b584;
     border-radius: 50%;
     right: size(29px);
     top: size(-55px);
@@ -176,7 +173,7 @@
     content: "";
     width: size(362px);
     height: size(362px);
-    background:  #3E5652;
+    background: #3e5652;
     border-radius: 50%;
     left: size(-5px);
     bottom: size(-89px);
@@ -199,6 +196,21 @@
     @include mobile {
       width: 100%;
       height: auto;
+    }
+  }
+
+  .sysoev {
+    position: absolute;
+    bottom: size(-54px);
+    left: calc(50% - 7rem);
+    width: 15.13636rem;
+    height: 12.54545rem;
+
+    @include mobile {
+      bottom: -2.15455rem;
+      left: calc(50% - 3.8rem);
+      width: 9.5rem;
+      height: 9rem;
     }
   }
 }
