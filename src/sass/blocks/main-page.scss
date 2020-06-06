@@ -149,6 +149,8 @@
 
       a {
         opacity: 0.4;
+        pointer-events: none;
+        cursor: initial;
       }
 
       .soon__icon {

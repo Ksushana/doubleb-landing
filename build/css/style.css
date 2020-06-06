@@ -603,6 +603,8 @@ a:hover {
 
 .main-page__list li.soon a {
   opacity: 0.4;
+  pointer-events: none;
+  cursor: initial;
 }
 
 .main-page__list li.soon .soon__icon {
