@@ -143,6 +143,40 @@
         height: size(52px);
       }
     }
+
+    &.soon {
+      position: relative;
+
+      a {
+        opacity: 0.4;
+      }
+
+      .soon__icon {
+        position: absolute;
+        width: size(60px);
+        height: size(60px);
+        background: #fb6569;
+        opacity: 1;
+        border-radius: 50%;
+        color: #ffffff;
+        right: size(-30px);
+        top: size(-40px);
+        text-align: center;
+        letter-spacing: 0.313433px;
+        font-weight: 600;
+        font-size: size(13.4328px);
+        line-height: size(60px);
+
+        @include mobile {
+          width: size(67px);
+          height: size(67px);
+          right: size(-20px);
+          top: size(-47px);
+          font-size: size(15px);
+          line-height: size(67px);
+        }
+      }
+    }
   }
 }
 
